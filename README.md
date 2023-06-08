@@ -26,7 +26,7 @@ Create a new host entry in the hosts file with the provided domain and IP.
 hostman create --domain example.com --ip 192.168.1.100 --y
 ```
 
-### **read**
+### **open**
 
 Read and print the contents of the hosts file to the console.
 
