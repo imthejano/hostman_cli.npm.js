@@ -1,9 +1,10 @@
 module.exports = {
 	isIP(str) {
-		const ipRegex =
-			/^(?:(?:\d{1,3}\.){3}\d{1,3}|(?:(?:::)?(?:[a-fA-F0-9]{1,4}(?::|$)){1,8}))(?::\d{1,5})?$/
-		return ipRegex.test(str)
+		const ipv4Regex = /^(?:\d{1,3}\.){3}\d{1,3}$/
+		const ipv6Regex = /^([0-9A-Fa-f]{1,4}:){7}[0-9A-Fa-f]{1,4}$/
+		return ipv4Regex.test(str) || ipv6Regex.test(str)
 	},
+
 	isFQDN(str) {
 		const fqdnRegex =
 			/^(?=.{1,255}$)(([a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9]\.)+[a-zA-Z]{2,})$/

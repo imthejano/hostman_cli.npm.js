@@ -6,7 +6,7 @@ const questions = require('./questions')
 
 const validateDomainInput = async (arg) => {
 	let domain = arg.domain ?? ''
-	if (!validator.isFQDN(domain)) {
+	if (!(validator.isFQDN(domain) || validator.isIdentifier(domain))) {
 		let answer = await prompt([questions.domainQuestion])
 		return answer.domain
 	}
