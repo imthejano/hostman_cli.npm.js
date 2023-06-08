@@ -1,0 +1,34 @@
+{
+	"name": "imjano_hostman_cli",
+	"version": "1.0.0",
+	"description": "This is a CLI (Command Line Interface) for managing the hosts file located at C:WindowsSystem32driversetc.",
+	"main": "src/index.js",
+	"bin": {
+		"hostman": "./src/index.js"
+	},
+	"keywords": [
+		"cli",
+		"hosts",
+		"windows",
+		"hostman",
+		"imjano",
+		"dns"
+	],
+	"author": "Alejandro Garcia <imjano@outlook.com>",
+	"license": "ISC",
+	"dependencies": {
+		"cli-table": "^0.3.11",
+		"colors": "^1.4.0",
+		"commander": "^10.0.1",
+		"inquirer": "^8.0.0",
+		"moment": "^2.29.4"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/imthejano/hostman_cli.npm.js.git"
+	},
+	"bugs": {
+		"email": "imjano@outlook.com",
+		"url": "https://github.com/imthejano/hostman_cli.npm.js.git/issues"
+	}
+}
