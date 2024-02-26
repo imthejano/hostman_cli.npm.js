@@ -4,8 +4,8 @@ This is a CLI (Command Line Interface) for managing the hosts file located at C:
 
 ## **Install**
 
-```shel
-npm install imjano_hostman_cli -g
+```shell
+npm install @imjano/hostman_cli -g
 ```
 
 ## **Available Commands**
@@ -22,7 +22,7 @@ Create a new host entry in the hosts file with the provided domain and IP.
 
 #### Usage example
 
-```shel
+```shell
 hostman create --domain example.com --ip 192.168.1.100 --y
 ```
 
@@ -32,7 +32,7 @@ Read and print the contents of the hosts file to the console.
 
 #### Usage example
 
-```shel
+```shell
 hostman open
 ```
 
@@ -47,15 +47,15 @@ Display a table of hosts present in the hosts file. If no options are specified,
 
 #### Usage example
 
-```shel
+```shell
 hostman list
 ```
 
-```shel
+```shell
 hostman list --all
 ```
 
-```shel
+```shell
 hostman list --others
 ```
 
@@ -70,7 +70,7 @@ Delete the host entry that matches the provided ID.
 
 #### Usage example
 
-```shel
+```shell
 hostman delete 1 --y
 ```
 
@@ -88,19 +88,19 @@ Perform operations related to backups of the hosts file. If no options are speci
 
 #### Usage example
 
-```shel
+```shell
 hostman backup
 ```
 
-```shel
+```shell
 hostman list
 ```
 
-```shel
+```shell
 hostman open --id 1
 ```
 
-```shel
+```shell
 hostman restore --id 1
 ```
 
@@ -119,6 +119,6 @@ This command should be executed every time a modification is made to the hosts f
 
 #### Usage example
 
-```shel
+```shell
 hostman update
 ```

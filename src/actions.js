@@ -139,7 +139,7 @@ module.exports = {
 	},
 	async update(arg) {
 		const confirm = await validateConfirm(arg, {
-			message: `Are you sure you want to uptate the hosts configuration?`,
+			message: `Are you sure you want to update the hosts configuration?`,
 		})
 		if (confirm) {
 			if (await hostController.updateHosts())

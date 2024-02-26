@@ -1,5 +1,5 @@
 {
-	"name": "imjano_hostman_cli",
+	"name": "@imjano/hostman_cli",
 	"version": "1.0.2",
 	"description": "This is a CLI (Command Line Interface) for managing the hosts file located at C:WindowsSystem32driversetc.",
 	"main": "src/index.js",
